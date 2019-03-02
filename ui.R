@@ -10,21 +10,40 @@ library(shiny)
 shinyUI(fluidPage(
 
   # Application title
-  titlePanel("Old Faithful Geyser Data"),
+  titlePanel("Alzheimer's Disease Proteomics Model"),
 
   # Sidebar with a slider input for number of bins
   sidebarLayout(
     sidebarPanel(
-      sliderInput("bins",
-                  "Number of bins:",
-                  min = 1,
-                  max = 50,
-                  value = 30)
+      sliderInput("Eotaxin",
+                  "Eotaxin concentrations (pg/ml):",
+                  min = 0,
+                  max = 2.6,
+                  value = 1.9),
+      sliderInput("BNS",
+                  "Brain natriuretic peptide (pg/ml)",
+                  min = 0,
+                  max = 4.5,
+                  value = 3),
+      sliderInput("PPP",
+                  "Pancreatic polypeptide concetration (pg/ml):",
+                  min = 0,
+                  max = 3.3,
+                  value = 2.1),
+      sliderInput("Heparin",
+                  "Heparin binding EGF-like growth factor concentrations (pg/ml):",
+                  min = 0,
+                  max = 2.7,
+                  value = 1.9),
+      
     ),
-
-    # Show a plot of the generated distribution
+    
+    # Show percentages/classes for each model
     mainPanel(
-      plotOutput("distPlot")
+      p("This app will display the percentage chance of a patient developing AD based on the protein concentrations"),
+      h2("Results"),
+      verbatimTextOutput("results")
     )
   )
+))
 ))
