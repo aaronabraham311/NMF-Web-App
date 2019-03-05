@@ -35,6 +35,42 @@ shinyUI(fluidPage(
                   min = 0,
                   max = 2.7,
                   value = 1.9),
+      sliderInput("ApoD",
+                  "Apolipoprotein concentrations (ug/ml):",
+                  min = 0,
+                  max = 2.7,
+                  value = 1.7),
+      sliderInput("Vitronectin",
+                  "Vitronectin concentrations (ug/ml):",
+                  min = 0,
+                  max = 3.2,
+                  value = 2.9),
+      sliderInput("VEGF",
+                  "Vascular endothelial growth factor concentrations (pg/ml):",
+                  min = 0,
+                  max = 3.7,
+                  value = 2.8),
+      sliderInput("Fibrinogen",
+                  "Fibrinogen concentrations (mg/ml):",
+                  min = 0,
+                  max = 14,
+                  value = 6.1),
+      sliderInput("CysC",
+                  "Cystatin C concentrations (ng/ml):",
+                  min = 0,
+                  max = 3.6,
+                  value = 3.1),
+      sliderInput("VCAM",
+                  "Vascular cell adhesion molecule concentrations (ng/ml):",
+                  min = 0,
+                  max = 3.3,
+                  value = 2.9),
+      sliderInput("Thromb",
+                  "Thrombopoietin concentrations (ng/ml):",
+                  min = 0,
+                  max = 7.8,
+                  value = 2.2)
+      
       
     ),
     
@@ -45,5 +81,4 @@ shinyUI(fluidPage(
       verbatimTextOutput("results")
     )
   )
-))
 ))
