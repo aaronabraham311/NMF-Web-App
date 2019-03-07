@@ -61,7 +61,7 @@ shinyUI(fluidPage(
                   max = 3.6,
                   value = 3.1),
       sliderInput("VCAM",
-                  "Vascular cell adhesion molecule concentrations (ng/ml):",
+                  "Vascular cell adhesion molecule 1 concentrations (ng/ml):",
                   min = 0,
                   max = 3.3,
                   value = 2.9),
