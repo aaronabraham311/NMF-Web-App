@@ -14,7 +14,7 @@ shinyServer(function(input, output) {
   library(FFTrees)
   
   # Reading models
-  model <- readRDS("")
+  model <- readRDS("specificxgbLinear.RDS")
   
   # Getting input of algorithms
   output$results <- renderPrint ({
