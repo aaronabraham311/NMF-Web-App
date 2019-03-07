@@ -19,7 +19,7 @@ shinyServer(function(input, output) {
   # Getting input of algorithms
   output$results <- renderPrint ({
     df = data.frame(
-      "Eotaxin.1..pg.ml." = input$Eotaxin,
+      "Eotaxin.1..pg.mL." = input$Eotaxin,
       "Brain.Natriuretic.Peptide...BNP...pg.ml." = input$BNS,
       "Pancreatic.Polypeptide..PPP...pg.ml." = input$PPP,
       "Heparin.Binding.EGF.Like.Growth.Factor....pg.mL." = input$Heparin,
