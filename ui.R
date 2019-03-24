@@ -76,7 +76,8 @@ shinyUI(fluidPage(
     
     # Show percentages/classes for each model
     mainPanel(
-      p("This app will display the percentage chance of a patient developing AD based on the protein concentrations"),
+      p("This app will display the percentage chance of a patient developing AD based on the protein concentrations. X1 represents 
+        the probability of a healthy diagnosis, X2 is the probability of an MCI diagnosis, and X3 is the probability of an AD diagnosis"),
       h2("Results"),
       verbatimTextOutput("results")
     )
