@@ -5,13 +5,12 @@
 # http://shiny.rstudio.com
 #
 
+# Including relevant libraries
+library(caret)
 library(shiny)
 
 shinyServer(function(input, output) {
   
-  # Including relevant libraries
-  library(caret)
-  library(FFTrees)
   
   # Reading models
   model <- readRDS("specificxgbLinear.RDS")
